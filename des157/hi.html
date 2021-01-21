@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation</title>
+</head>
+
+<body>
+    <h2>small talk</h2>
+    <div id ="talk">
+        <p>hi!</p>
+    </div>
+
+    
+    <script>
+        //program that is small talk and asks about their day, returning a number in the end
+
+        //function that reduces the number by 1
+        function first(thenum){
+            var thenum = thenum - - 1;
+            return thenum;
+        }
+
+        //function that calls previous function, therefore adding it to iself, (the equivalent of num = (num * 2)-1
+        function luckynum(anum){
+            var anum = anum + first(anum);
+            return anum;
+        }
+
+        
+
+
+        var hi = prompt("Hi! (respond with hello)");
+
+
+        if (hi == "hello"){
+            var before = document.getElementById("talk");
+            var how = prompt("How is it going? (respond with good or bad)");
+            
+            if (how == "good"){
+                var num = prompt("What is your favorite number?");
+                if (num != NaN){
+                    talk.innerHTML = "<p>Check the console for you lucky number!</p>"
+                    console.log(`Here is your lucky number: ${luckynum(num)}`)
+                }
+            }
+
+            if (how == "bad"){
+                var num = prompt("What is your favorite number?");
+                if (num != NaN){
+                    talk.innerHTML = "<p>Check the console for you lucky number! Hopefully it makes your day better!</p>"
+                    console.log(`Here is your lucky number: ${luckynum(num)}`)
+                }
+            }
+        }
+        else {
+            console.log("ERROR!")
+        }
+    </script>
+    
+</body>
+</html>
