@@ -1,0 +1,132 @@
+body{
+    padding-top: 30px;
+    min-width: 800px;
+    background-color: #fdf1f1;
+}
+
+header{
+    padding-bottom: 40px;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    width: 96%;
+}
+
+section {
+    flex: 1;
+    text-align: center;
+}
+        
+h1 {
+    font-family: 'Barriecito', cursive;
+    text-transform: uppercase;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 3em;
+    color: #609b89;
+}
+
+h2{
+    font-family: 'Padauk', sans-serif;
+    margin: auto;
+    width: 90%;
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 1.9em;
+    color: #609b89;
+}
+
+main p{
+    font-family: 'Padauk', sans-serif;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    padding-top: 10px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    font-size: 1em;
+    color: #423079;
+}
+
+.source{
+    text-align: center;
+}
+
+.source a{
+    font-family: 'Padauk', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    width: 200px;
+    margin: auto;
+    color: #609b89;
+}
+
+.source a:hover{
+    font-weight: bold;  
+}
+
+
+article h2 {
+    font-size: 1.8em;
+    color: #609b89;
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 100px;
+}
+
+footer a{
+    font-family: 'Padauk', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    width: 200px;
+    margin: auto;
+    color: #609b89;
+    border: 4px solid #609b89;
+    padding: 5px;
+    display: block;
+    border-radius: 50px;
+}
+
+footer a:hover{
+    font-weight: bold;  
+}
+
+img {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#banner{
+    width: 100%;
+    height: 100px;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}
+
+#banner div{
+    text-align: center;
+    flex: 1;
+    transform: rotate(45deg);
+}
+
+#banner div:hover {
+    transform: rotate(1000deg);
+    transition: all 2s ease-out;
+}
+
+
+
