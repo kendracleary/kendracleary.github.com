@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib</title>
+    <script src='madlib.js' defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bfy5gmc.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <article class='before'>
+        <header>
+            <h1>how's it going?</h1>
+        </header>
+
+        <img id='city' src="images/city.png" alt="Friends in the city" height='490'>
+        <img id='cliff' src="images/cliff.png" alt="Sibs in nature" height='600'>
+        <form id = 'myform'>
+
+            <section id='day'>
+                <p>how has your day been?</p>
+                <input type = 'radio' id= 'good' name='day' value='good'>
+                <label for='good'>good</label>
+                <input type = 'radio' id= 'bad' name='day' value='bad'>
+                <label for='bad'>bad</label>
+            </section>
+
+            <section class='more'>
+                <label for = 'badthing'>a bad thing that happened today</label>
+                <input type = 'text' id= 'badthing' required>
+            </section>
+
+            <section class='more'>
+                <label for = 'goodthing'>a good thing that happened today</label>
+                <input type = 'text' id= 'goodthing' required>
+            </section>
+        
+            <section>
+                <label for = 'fname'>your name</label>
+                <input type = 'text' id= 'fname' required>
+            </section>
+
+            <section>
+                <label for = 'bday'>your birthday date</label>
+                <input type = 'date' id= 'bday' required>
+            </section>
+
+            <section  id='submit'>
+                <input type = 'submit' value='ok?'>
+            </section>
+        </form>
+    </article>
+
+    <article class='dont'>
+        <header>
+            <h1>hope you have a good day</h1>
+        </header>
+
+        <section id='stuff'>
+            <p id='hello'></p>
+            <p id='response'></p>
+            <p id='ticker'></p>
+        </section>
+    
+        
+    
+        <img id='dalton' src="images/dalton.png" alt="Boy and rainbow" height='300'>
+        <img id='arb' src="images/arb.png" alt="Nature" height='300'>
+        <img id='maren' src="images/maren.png" alt="Girl and surfboard" height='300'>
+            
+    </article>
+
+    <footer>
+        <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML</a></p>
+    </footer>
+</body>
+</html>
