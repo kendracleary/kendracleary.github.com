@@ -1,3 +1,5 @@
+/*Flexbox for articles code copied from https://stackoverflow.com/questions/45037844/arrange-2-items-per-row-using-flexbox/45038018 */
+
 body{
     padding-top: 30px;
     min-width: 800px;
@@ -11,12 +13,13 @@ header{
 main {
     margin: auto;
     text-align: center;
+    flex-wrap: wrap;
     display: flex;
     width: 96%;
 }
 
 article {
-    flex: 1;
+    flex: 0 50%;
     text-align: center;
 }
         
@@ -123,10 +126,18 @@ img {
     transform: rotate(45deg);
 }
 
-#banner div:hover {
-    transform: rotate(1000deg);
-    transition: all 2s ease-out;
+a{
+    text-align: center;
+    font-family: 'Padauk', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    width: 200px;
+    margin: auto;
+    color: #609b89;
 }
 
+a:hover{
+    font-weight: bold;  
+}
 
 
