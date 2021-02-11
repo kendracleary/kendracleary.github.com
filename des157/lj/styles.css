@@ -21,6 +21,7 @@ main {
 article {
     flex: 0 50%;
     text-align: center;
+    padding-bottom: 40px;
 }
         
 h1 {
@@ -46,6 +47,19 @@ h2{
     color: #609b89;
 }
 
+h3{
+    font-weight: bold;
+    font-family: 'Padauk', sans-serif;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    padding-top: 10px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    font-size: 1em;
+    color: #423079;
+}
+
 main p{
     font-family: 'Padauk', sans-serif;
     margin: auto;
@@ -56,6 +70,19 @@ main p{
     text-align: left;
     font-size: 1em;
     color: #423079;
+}
+
+figcaption {
+    font-family: 'Padauk', sans-serif;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    padding-top: 10px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    font-size: 1em;
+    color: #423079;
+    text-align: center;
 }
 
 .source{
@@ -105,7 +132,8 @@ footer a:hover{
     font-weight: bold;  
 }
 
-img {
+
+div img {
     padding-top: 100px;
     padding-bottom: 100px;
 }
