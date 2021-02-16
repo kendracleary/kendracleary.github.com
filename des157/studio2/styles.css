@@ -1,0 +1,93 @@
+#cherry{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#house{
+    position: absolute;
+    left: -40px;
+    bottom: -40px;
+}
+
+#frog{
+    position: absolute;
+    left: 240px;
+    bottom: 0px;
+}
+
+#bunny{
+    position: absolute;
+    left: 540px;
+    bottom: -50px;
+}
+
+#herbs{
+    position: absolute;
+    right: 100px;
+    bottom: -50px;
+}
+
+#fish{
+    position: absolute;
+    right: -60px;
+    top: 20px;
+}
+
+#title{
+    text-align: center;
+    font-family: 'Roboto';
+    color: '#355b8a';
+}
+
+#blurb{
+    position: absolute;
+    left: 600px;
+    bottom: 300px;
+}
+
+#title p{
+    text-align: center;
+    font-family: 'Roboto';
+    color: #c25060;
+    font-size: 1.2em;
+}
+
+#name{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+#info{
+    margin-left: 450px;
+    margin-right: 450px;
+    text-align: center;
+
+}
+
+#blurb{
+    text-align: center;
+    font-family: 'Roboto';
+    color: #8fb7e0;
+    font-size: 1.2em;
+}
+
+footer {
+    position: absolute;
+    left: 20px;
+    bottom: 2px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+footer a{
+    font-size: 1em;
+    width: 200px;
+    margin: auto;
+    color: #8fb7e0;
+    padding: 5px;
+    display: block;
+    border-radius: 50px;
+}
