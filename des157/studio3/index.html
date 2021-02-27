@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Garden</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/pyz3thd.css">
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>LUCKY GARDEN</h1>
+    <p id="info">roll the dice, the total of the roll is added to the current player's score. if a clover appears, this player's turn is over, and it is the other player’s turn. after each roll, the current player can either roll again, or if the current player feels that luck is running thin, they can pass to the other player. the first player to get 30 points or higher wins!! two of the clovers zeros out the score!! good luck!!</p> 
+
+    <div id="gamecontrol">
+        <button id="startgame">get good luck</button>
+    </div>
+
+    <div id="game"></div>
+    <div id="actions"></div>
+    <div id="score"></div>
+
+    <script>
+        var startGame = document.getElementById('startgame');
+	    var gameControl = document.getElementById('gamecontrol');
+	    var game = document.getElementById('game');
+	    var score = document.getElementById('score');
+        var actionArea = document.getElementById('actions');
+        
+        var gameData = {
+	        dice: ['i1.png', 'i2.png', 'i3.png', 'i4.png', 'i5.png', 'i6.png'],
+	        players: ['player 1', 'player 2'],
+	        score: [0, 0],
+	        roll1: 0,
+	        roll2: 0,
+	        rollSum: 0,
+	        index: 0,
+	        gameEnd: 29
+        };
+
+        startGame.addEventListener('click', function(){
+            gameData.index = Math.round(Math.random());
+
+            gameControl.innerHTML = '<p class="quit">The Game Has Started</p>';
+            gameControl.innerHTML += '<button class="quit" id="quit">Wanna Quit?</button>';
+
+            document.getElementById('quit').addEventListener('click', function(){
+                location.reload();
+            });
+
+            console.log(gameData.index);
+            setUpTurn();
+        });
+
+        function setUpTurn(){
+            game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
+            actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
+
+            document.getElementById('roll').addEventListener('click', function(){
+                throwDice();
+            });
+        }
+
+        function throwDice(){
+            actionArea.innerHTML = '';
+            gameData.roll1 = Math.floor(Math.random()*6)+1;
+            gameData.roll2 = Math.floor(Math.random()*6)+1;
+
+            game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
+            game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"><img src="${gameData.dice[gameData.roll2-1]}">`;
+
+            gameData.rollSum = gameData.roll1 + gameData.roll2;
+            console.log(gameData);
+
+            if (gameData.rollSum === 2){
+                game.innerHTML += '<p>Oh snap! Snake eyes!</p>'
+                gameData.score[gameData.index] = 0;
+                gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+                showCurrentScore();
+                setTimeout(setUpTurn, 2000);
+            }
+            else if (gameData.roll1 === 1 || gameData.roll2 === 1){
+                gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+                game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
+                setTimeout(setUpTurn, 2000);
+            }
+            else {
+                gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
+                actionArea.innerHTML = '<button id="rollagain">Roll again</button> or <button id="pass">Pass</button>';
+
+                document.getElementById('rollagain').addEventListener('click', function(){
+                    setUpTurn();
+                });
+
+                document.getElementById('pass').addEventListener('click', function(){
+                    gameData.index ? (gameData.index = 0) : (gameData.index = 1);
+                    setUpTurn();
+                });
+
+                checkWinningCondition();
+            }
+        }
+
+        function checkWinningCondition(){
+            if (gameData.score[gameData.index] > gameData.gameEnd){
+                score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
+                actionArea.innerHTML = '';
+                document.getElementById('quit').innerHTML = "Start a New Game?";
+            }
+            else {
+                showCurrentScore();
+            }
+        }
+
+        function showCurrentScore(){
+            score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} with ${gameData.score[0]}</strong> and <strong>${gameData.players[1]} with ${gameData.score[1]}</strong></p>`;
+        }
+
+        
+
+        
+
+    </script>
+    
+</body>
+</html>

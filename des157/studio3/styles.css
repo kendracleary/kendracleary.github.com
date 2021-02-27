@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    background-color: #b3cae7;
+    font-family: barricada-pro, serif;
+    color: #63856b;
+}
+
+button { 
+    font-family: barricada-pro, serif;
+    color: #63856b;
+    padding: 10px;
+    border: 4px solid #63856b;
+    margin-bottom: 8px;
+    border-radius: 50px;
+    font-size: 0.8em;
+    width: 150px;
+    text-align: center;
+    background-color: #c5acc3;
+}
+
+button:hover {
+    border: 4px solid #8da793;
+    color: #8da793;
+}
+
+div {
+    padding: 20px;
+}
+
+#info {
+    position: absolute;
+    font-family: barricada-pro, serif;
+    padding-left: 20px;
+    width: 300px;
+    font-size: 1em;
+    font-style: normal;
+    color: #63856b;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.quit {
+    position: absolute;
+    font-family: barricada-pro, serif;
+    right: 20px;
+    top: 180px;
+    padding-right: 20px;
+    width: 300px;
+    font-style: normal;
+    color: #63856b;
+    line-height: 1.5em;
+    text-align: right;
+}
+
+#quit {
+    border: 4px solid #63856b;
+    padding: 5px;
+    display: block;
+    margin-bottom: 8px;
+    border-radius: 50px;
+    font-size: 0.8em;
+    width: 150px;
+    text-align: center;
+    top: 230px;
+    background-color: #c5acc3;
+    right: 50px;
+}
+
+#quit:hover{
+    border: 4px solid #8da793;
+    color: #8da793;
+}
+
+p {
+    font-family: barricada-pro, serif;
+    font-style: normal;
+    color: #63856b;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+#score {
+    position: absolute;
+    font-family: barricada-pro, serif;
+    right: 20px;
+    top: 300px;
+    padding-right: 20px;
+    width: 250px;
+    font-style: normal;
+    color: #63856b;
+    line-height: 1.5em;
+    text-align: right;
+}
+
+
+
+h1{
+    font-family: strumpf-std-contour, sans-serif;
+    color: #63856b;
+    font-size: 4.5em;
+}
+
