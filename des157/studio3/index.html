@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>LUCKY GARDEN</h1>
-    <p id="info">roll the dice, the total of the roll is added to the current player's score. if a clover appears, this player's turn is over, and it is the other player’s turn. after each roll, the current player can either roll again, or if the current player feels that luck is running thin, they can pass to the other player. the first player to get 30 points or higher wins!! two of the clovers zeros out the score!! good luck!!</p> 
+    <p id="info">pick a flower, the total of the flowers is added to the current player's score. if a clover appears, this player's turn is over, and it is the other player’s turn. after each pick, the current player can either pick again, or if the current player feels that luck is running thin, they can pass to the other player. the first player to get 30 points or higher wins!! two of the clovers zeros out the score!! good luck!!</p> 
 
     <div id="gamecontrol">
         <button id="startgame">get good luck</button>
@@ -86,7 +86,7 @@
             }
             else {
                 gameData.score[gameData.index] = gameData.score[gameData.index] + gameData.rollSum;
-                actionArea.innerHTML = '<button id="rollagain">Roll again</button> or <button id="pass">Pass</button>';
+                actionArea.innerHTML = '<button id="rollagain">Pick again</button> or <button id="pass">Pass</button>';
 
                 document.getElementById('rollagain').addEventListener('click', function(){
                     setUpTurn();
