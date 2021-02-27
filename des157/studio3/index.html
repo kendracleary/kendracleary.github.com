@@ -53,8 +53,8 @@
         });
 
         function setUpTurn(){
-            game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
-            actionArea.innerHTML = '<button id="roll">Roll the Dice</button>';
+            game.innerHTML = `<p>Pick a flower for the ${gameData.players[gameData.index]}</p>`;
+            actionArea.innerHTML = '<button id="roll">Pick a Flower</button>';
 
             document.getElementById('roll').addEventListener('click', function(){
                 throwDice();
@@ -66,7 +66,7 @@
             gameData.roll1 = Math.floor(Math.random()*6)+1;
             gameData.roll2 = Math.floor(Math.random()*6)+1;
 
-            game.innerHTML = `<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
+            game.innerHTML = `<p>Pick a flower for the ${gameData.players[gameData.index]}</p>`;
             game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"><img src="${gameData.dice[gameData.roll2-1]}">`;
 
             gameData.rollSum = gameData.roll1 + gameData.roll2;
@@ -81,7 +81,7 @@
             }
             else if (gameData.roll1 === 1 || gameData.roll2 === 1){
                 gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-                game.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
+                game.innerHTML += `<p>Sorry, one of your picks was a clover, switching to ${gameData.players[gameData.index]}</p>`;
                 setTimeout(setUpTurn, 2000);
             }
             else {
