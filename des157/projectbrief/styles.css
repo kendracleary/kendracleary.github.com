@@ -1,0 +1,138 @@
+/*Flexbox for articles code copied from https://stackoverflow.com/questions/45037844/arrange-2-items-per-row-using-flexbox/45038018 */
+
+body{
+    padding-top: 30px;
+    min-width: 800px;
+    background-color: #f8ebc9;
+}
+
+header{
+    padding-bottom: 40px;
+}
+
+main {
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    width: 96%;
+}
+
+article {
+    flex: 0 50%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+        
+h1 {
+    font-family: strumpf-std-contour, sans-serif;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 3.2em;
+    color: #6e886a;
+}
+
+h2{
+    font-family: 'Padauk', sans-serif;
+    margin: auto;
+    width: 90%;
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 1.9em;
+    color: #c68bab;
+}
+
+h3{
+    font-weight: bold;
+    font-family: 'Padauk', sans-serif;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    padding-top: 10px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    font-size: 1em;
+    color: #c68bab;
+}
+
+main p{
+    font-family: 'Padauk', sans-serif;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    padding-top: 10px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    font-size: 1em;
+    color: #5c7259;
+}
+
+
+
+.source{
+    text-align: center;
+}
+
+.source a{
+    font-family: 'Padauk', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    width: 200px;
+    margin: auto;
+    color: #c68bab;
+}
+
+.source a:hover{
+    font-weight: bold;  
+}
+
+
+article h2 {
+    font-size: 1.8em;
+    color: #c68bab;
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 100px;
+}
+
+footer a{
+    font-family: 'Padauk', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    width: 200px;
+    margin: auto;
+    color: #c68bab;
+    border: 4px solid #c68bab;
+    padding: 5px;
+    display: block;
+    border-radius: 50px;
+}
+
+footer a:hover{
+    font-weight: bold;  
+}
+
+
+a{
+    text-align: center;
+    font-family: 'Padauk', sans-serif;
+    text-decoration: none;
+    font-size: 1em;
+    width: 200px;
+    margin: auto;
+    color: #c68bab;
+}
+
+a:hover{
+    font-weight: bold;  
+}
+
+
