@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whatsup</title>
+    <script src='final.js' defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.typekit.net/bfy5gmc.css">
+</head>
+
+<body>
+    <header>
+        <h1>What's Up?</h1>
+    </header>
+
+    <div class='stars'>
+        <img id='s1' src="images/star.png" alt="star" height='120'>
+        <img id='s2' src="images/star.png" alt="star" height='150'>
+        <img id='s3' src="images/star.png" alt="star" height='80'>
+        <img id='s4' src="images/star.png" alt="star" height='200'>
+        <img id='s5' src="images/star.png" alt="star" height='80'>
+    </div>
+
+    <article class='first'>
+        <section  id='yo'>
+            <input type = 'submit' value="yo! let's go?">
+        </section>
+    </article>
+
+   <article class='second'>
+
+        <form id = 'myform'>
+
+            <section id='day'>
+                <p>how has your day been?</p>
+                <input type = 'radio' id= 'good' name='day' value='good'>
+                <label for='good'>good</label>
+                <input type = 'radio' id= 'bad' name='day' value='bad'>
+                <label for='bad'>bad</label>
+            </section>
+
+            <section>
+                <label for = 'fname'>name</label>
+                <input type = 'text' id= 'fname' required>
+            </section>
+
+            <section>
+                <label for = 'fnum'>lucky number</label>
+                <input type = 'number' id= 'fnum' min='0' max='10' placeholder='0 through 10' required>
+            </section>
+
+            <section>
+                <label for = 'fcol'>fave color</label>
+                <input type = 'color' id= 'fcol' required>
+            </section>
+
+            <section>
+                <label for = 'bday'>birthday</label>
+                <input type = 'date' id= 'bday' required>
+            </section>
+
+            <section  id='submit'>
+                <input type = 'submit' value='ready?'>
+            </section>
+        </form>
+    </article>
+
+    <article class='third'>
+        <div id='circle'></div>
+
+        <section id='stuff'>
+            <p id='hello'></p>
+            <p id='response'></p>
+            <p id='ticker'></p>
+            <div id='song'></div>
+            <p>c ya later :)</p>
+        </section>
+
+        <h2>hope you have a good day</h2>
+
+            
+    </article>
+
+    <footer>
+        <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML</a></p>
+    </footer>
+</body>
+</html>
