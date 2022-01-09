@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(182, 202, 231);
+    color: rgb(88, 80, 80);
+    transition: all 2s;
+    font-family: 'Padauk';
+    font-style: bold;
+}
+
+body.switch {
+    background-color: rgb(93, 85, 95);
+    color: #333;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    /* make sure the columns don't get too small and text stays readable */
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    overflow: hidden;
+}
+
+#banner.switch {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+}
+
+main {
+    display: flex;
+    margin: 1em auto;
+}
+
+main section {
+    width: 25%;
+    margin: 0 .25em;
+    padding: 3em;
+    padding-top: 0;
+}
+
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: 'Rock 3D';
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Padauk';
+}
+
+h3 {
+    text-align: center;
+    font-size: 23px;
+}
+
+a {
+    font-size: 17px;
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+section li {
+    margin-bottom: 7px;
+    border: 2px solid rgb(112, 103, 103);
+    border-radius: 20px;
+    text-align: center;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: rgb(88, 80, 80);
+}
+
+section li:hover {
+    background-color: rgb(187, 196, 193);
+}
+
+section a:hover {
+    font-size: 18px;
+}
+
+section.switch a {
+    color: #333;
+}
+
+section.switch li:hover {
+    font-style: bold;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: rgb(231, 190, 176);
+    color: #333;
+    border: 3px solid rgb(112, 103, 103);
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: rgb(150, 142, 127);
+}
+
+button.switch {
+    background-color: rgb(235, 235, 235);
+    border-color: #333;
+}
+
+button.switch:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235)
+}
