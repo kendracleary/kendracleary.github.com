@@ -7,14 +7,13 @@ body {
 }
 
 body.switch {
-    background-color: rgb(93, 85, 95);
+    background-color: rgb(115, 106, 117);
     color: #333;
 }
 
 #container {
     position: relative;
     width: 100%;
-    /* make sure the columns don't get too small and text stays readable */
     margin: 1em auto;
     padding-top: 2em;
 }
@@ -23,16 +22,29 @@ body.switch {
 #banner {
     position: relative;
     display: flex;
-    width: 1100px;
-    height: 250px;
+    width: 1000px;
+    height: 300px;
     margin: auto;
-    background-color: rgb(235, 235, 235);
     overflow: hidden;
 }
 
+#image1 {
+    visibility: visible;
+}
+
+#image1.switch {
+    visibility: hidden;
+}
+
+#image2 {
+    visibility: hidden;
+}
+
+#image2.switch {
+    visibility: visible;
+}
+
 #banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
     transition: all 2s;
 }
 
@@ -88,6 +100,10 @@ section li {
     text-align: center;
 }
 
+section.switch li {
+    border: 2px solid #333;
+}
+
 section a {
     line-height: 1.1em;
     display: inline-block;
@@ -99,8 +115,8 @@ section li:hover {
     background-color: rgb(187, 196, 193);
 }
 
-section a:hover {
-    font-size: 18px;
+section.switch li:hover {
+    background-color: rgb(150, 149, 114);
 }
 
 section.switch a {
@@ -116,10 +132,11 @@ button {
     top: 20px;
     right: 20px;
     padding: 12px;
-    background-color: rgb(231, 190, 176);
-    color: #333;
+    background-color: rgb(187, 196, 193);
+    color: rgb(88, 80, 80);
     border: 3px solid rgb(112, 103, 103);
     border-radius: 20px;
+    font-family: inherit;
 }
 
 button:hover {
@@ -127,11 +144,12 @@ button:hover {
 }
 
 button.switch {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(150, 149, 114);
     border-color: #333;
+    color: #333;
 }
 
 button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
+    background-color: rgb(83, 81, 81);
+    color: rgb(132, 141, 153);
 }
