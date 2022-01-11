@@ -3,7 +3,6 @@ body {
     color: rgb(88, 80, 80);
     transition: all 2s;
     font-family: 'Padauk';
-    font-style: bold;
 }
 
 body.switch {
@@ -121,10 +120,6 @@ section.switch li:hover {
 
 section.switch a {
     color: #333;
-}
-
-section.switch li:hover {
-    font-style: bold;
 }
 
 button {
