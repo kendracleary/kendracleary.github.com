@@ -29,19 +29,19 @@ body.switch {
 }
 
 #image1 {
-    visibility: visible;
+    display: inline;
 }
 
 #image1.switch {
-    visibility: hidden;
+    display: none;
 }
 
 #image2 {
-    visibility: hidden;
+    display: none;
 }
 
 #image2.switch {
-    visibility: visible;
+    display: inline;
 }
 
 #banner.switch {
