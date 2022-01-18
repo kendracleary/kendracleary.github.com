@@ -1,0 +1,59 @@
+#one {
+    position: fixed;
+    width: 1500px;
+    left: 0;
+    top: 0;
+}
+
+#again {
+    font-family: 'Calistoga', cursive;
+    color: rgb(241, 241, 213);
+    -webkit-text-stroke: 2px rgb(108, 112, 108); 
+}
+
+
+section {
+    position: absolute;
+}
+
+#paragraph1 {
+    font-size: 5.25em;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#paragraph2 {
+    font-size: 5.25em;
+    position: relative;
+    left: 150px;
+    top: 360px;
+    text-align: right;  
+}
+
+#paragraph3 {
+    font-size: 2em;
+    position: relative;
+    left: 150px;
+    top: 275px;
+    text-align: right;   
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
+}
+
+.fa-expand{
+    top: 12px;
+    right: 12px;
+    position: absolute;
+    font-size: 30px;
+    color: rgb(97, 97, 97);
+}
+
+.fa-expand:hover{
+    cursor: pointer;
+}
