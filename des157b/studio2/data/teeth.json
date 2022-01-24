@@ -1,0 +1,103 @@
+{
+    "point1" : {
+        "when" : "8:53AM",
+        "why" : "Just woke up",
+        "whiteness" : 2
+    },
+
+    "point2" : {
+        "when" : "9:37AM",
+        "why" : "Drank coffee",
+        "whiteness" : 1
+    },
+
+    "point3" : {
+        "when" : "11:18AM",
+        "why" : "Ate breakfast",
+        "whiteness" : 3
+    },
+
+    "point4" : {
+        "when" : "2:08PM",
+        "why" : "Ate a snack",
+        "whiteness" : 2
+    },
+
+    "point5" : {
+        "when" : "2:36PM",
+        "why" : "Had more of a snack",
+        "whiteness" : 2
+    },
+
+    "point6" : {
+        "when" : "3:51PM",
+        "why" : "Afternoon coffee",
+        "whiteness" : 1
+    },
+
+    "point7" : {
+        "when" : "8:24PM",
+        "why" : "Ate dinner",
+        "whiteness" : 2
+    },
+
+    "point8" : {
+        "when" : "10:47PM",
+        "why" : "Ate a post-dinner snack",
+        "whiteness" : 3
+    },
+
+    "point9" : {
+        "when" : "12:32PM",
+        "why" : "Ate a midnight snack",
+        "whiteness" : 3
+    },
+
+    "point10" : {
+        "when" : "11:12AM",
+        "why" : "Just woke up",
+        "whiteness" : 2
+    },
+
+    "point11" : {
+        "when" : "12:09PM",
+        "why" : "Drank Coffee",
+        "whiteness" : 1
+    },
+
+    "point12" : {
+        "when" : "1:03PM",
+        "why" : "Ate Brunch",
+        "whiteness" : 1
+    },
+
+    "point13" : {
+        "when" : "4:29PM",
+        "why" : "Ate a snack",
+        "whiteness" : 2
+    },
+
+    "point14" : {
+        "when" : "5:32PM",
+        "why" : "Ate a snack",
+        "whiteness" : 3
+    },
+
+    "point15" : {
+        "when" : "9:16PM",
+        "why" : "Ate dinner",
+        "whiteness" : 3
+    },
+
+    "point16" : {
+        "when" : "10:57PM",
+        "why" : "Ate a post-dinner snack",
+        "whiteness" : 2
+    },
+    
+    "point17" : {
+        "when" : "1:42AM",
+        "why" : "Before bed",
+        "whiteness" : 2
+    }
+}
